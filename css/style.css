@@ -1,0 +1,101 @@
+body{
+    background-color: #110A08;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NAVABAR */
+
+.navbar-brand{
+    width: 50px;
+}
+.navbar-nav{
+    text-align: center;
+    box-shadow: inset;
+    font-family: 'Space Mono', monospace;
+}
+.nav-link{
+    color: #A8755B;
+    padding-right: 10px;
+    margin: 5px;
+}
+
+.nav-link:hover{
+    color: #E5E5CB;
+}
+
+.navbar-toggler-icon{
+    background-image: url(/Resources/icons/hamburger.png);
+}
+
+#hamburger-btn{
+    border:none;
+}
+
+.btn-resume{
+    width: 140px;
+    height: 40px;
+    background-color: #110A08;
+    color: #A8755B;
+    border: 2px solid #A8755B;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.btn-resume:hover{
+    color: #E5E5CB;
+    border: 2px solid #E5E5CB;
+}
+
+a{
+    text-decoration: none;
+    color: #A8755B;
+}
+a:hover{
+    color: #E5E5CB;
+}
+
+/* INTRO */
+
+.my-intro{
+    max-width:max-content;
+    padding-top: 5%;
+}
+
+h4{
+    color: #E5E5CB;
+    font-family: 'Space Mono', monospace;
+}
+
+h1{
+    color: #A8755B;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 4.5rem;
+}
+
+h2{
+    color: #FFC3A1;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+#bio{
+    width: 55%;
+    color: #A8755B;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 300px) and (max-width: 1920px) {
+    .navbar{
+        padding-right: 5vw; /* Corresponds to 10% of the viewport width */
+        padding-left: 5vw; /* Corresponds to 10% of the viewport width */
+    }
+    .my-intro{
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
+}
