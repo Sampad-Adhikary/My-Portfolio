@@ -129,10 +129,13 @@ h2{
     border: 2px solid #E5E5CB;
     width: 220px;
     height: 50px;
+    transition: 0.5s;
 }
 
 .about{
+    max-width:max-content;
     padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .heading-big{
@@ -161,7 +164,25 @@ h2{
     background-image: url(/css/Resources/pictures/sam.png);
 }
 
+.expertise{
+    max-width:max-content;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
 
+}
+
+.expertise-box{
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #A8755B;
+    border-style: solid;
+    width: 400px;
+    height: 300px;
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+}
 
 /* RESPONSIVE */
 
@@ -183,6 +204,14 @@ h2{
     }
     .about{
         /* text-align: center; */
+        display: flex;
+        justify-content: center;
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
+    .expertise{
+        display: flex;
+        justify-content: center;
         padding-right: 5vw;
         padding-left: 5vw;
     }
