@@ -1,4 +1,6 @@
 body{
+    padding-left: 5vw;
+    padding-right: 5vw;
     background-color: #110A08;
     font-family: 'Roboto', sans-serif;
     color: #A8755B;
@@ -106,6 +108,7 @@ h2{
 
 .get-in-touch{
     padding-top: 5%;
+    padding-bottom: 5%;
     text-align: center;
 }
 
@@ -119,6 +122,7 @@ h2{
     border: 2px solid #A8755B;
     border-radius: 10px;
     margin-top: 5px;
+    margin-bottom: 5px;
     margin-left: 10px;
     font-weight: 600;
     font-family: 'Ubuntu', sans-serif;
@@ -136,6 +140,8 @@ h2{
     max-width:max-content;
     padding-top: 5%;
     padding-bottom: 5%;
+    /* padding-left: 5vw;
+    padding-right: 5vw; */
 }
 
 .heading-big{
@@ -164,6 +170,8 @@ h2{
     background-image: url(/css/Resources/pictures/sam.png);
 }
 
+/* MY EXPERTISE */
+
 .expertise{
     max-width:max-content;
     padding-top: 5%;
@@ -180,13 +188,36 @@ h2{
     width: 400px;
     height: 300px;
     margin: 2%;
-    padding: 2%;
+    padding: 15px 10px 15px 10px;
     text-align: center;
 }
 
+.expertise-box:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    border-color: #E5E5CB;
+    color: #E5E5CB;
+}
+
+.heading-small{
+    display: inline-block;
+    color: #A8755B;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    overflow: visible;
+    width: 200px;
+    text-align: left;
+}
+
+.expert-img{
+    float:left;
+    margin: 2px;
+}
 /* RESPONSIVE */
 
-@media screen and (min-width: 300px) and (max-width: 1920px) {
+@media screen and (min-width: 300px) and (max-width: 900px) {
     .navbar {
         
         padding-right: 5vw; /* Corresponds to 10% of the viewport width */
@@ -204,8 +235,6 @@ h2{
     }
     .about{
         /* text-align: center; */
-        display: flex;
-        justify-content: center;
         padding-right: 5vw;
         padding-left: 5vw;
     }
@@ -214,5 +243,14 @@ h2{
         justify-content: center;
         padding-right: 5vw;
         padding-left: 5vw;
+    }
+    .expertise-row{
+        display: flex;
+        justify-content: center;
+    }
+    .about-row{
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
 }
