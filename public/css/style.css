@@ -43,6 +43,7 @@ body{
     border-radius: 10px;
     margin-top: 5px;
     margin-left: 10px;
+    
 }
 
 .btn-resume:hover{
@@ -215,6 +216,115 @@ h2{
     float:left;
     margin: 2px;
 }
+
+/* PROJECTS */
+
+#projects{
+    max-width:max-content;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.project-card{
+    background-color: #3C2A21;
+    text-align: left;
+    width: 350px;
+    height: 400px;
+    margin: 0px auto;
+    margin-top:15px ;
+    border-radius: 5px;
+}
+
+
+.project-card:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.project-img{
+    width: 340px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.crd-head{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    color: #E5E5CB;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 0px; ;
+}
+
+.crd-normal{
+    font-family: 'Ubuntu', sans-serif;
+    color: #E5E5CB;
+    margin-bottom: 0px;
+}
+
+.crd-icon{
+    width: 30px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+/* TESTIMONIALS */
+
+
+.testimonial-cls{
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    align-items: center;
+}
+
+.carousel-item{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.cs-slide{
+    width: 100%;
+    height: 100%;
+    background-color: #3C2A21;
+    border-radius: 5px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 2%;
+}
+
+.carousel-content{
+    width: 70%;
+    margin: 0 auto;
+    color: #E5E5CB;
+}
+
+em{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    color: #E5E5CB;
+}
+
+
+/*FOOTER CLASS*/
+
+.footer-cls{
+    margin-top: 2%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    color: #AA8877;
+}
+
+.footer-icon{
+    margin-bottom: 30px;
+    width: 30px;
+    margin-right: 15px;
+}
+
 /* RESPONSIVE */
 
 @media screen and (min-width: 300px) and (max-width: 900px) {
@@ -249,6 +359,11 @@ h2{
         justify-content: center;
     }
     .about-row{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .project-row{
         display: flex;
         justify-content: center;
         text-align: center;
