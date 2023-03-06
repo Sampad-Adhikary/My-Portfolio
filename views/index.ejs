@@ -17,7 +17,7 @@
     />
     <link href="css/style.css" rel="stylesheet" >
   </head>
-  <body>
+  <body data-simplebar>
 
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
@@ -40,13 +40,13 @@
                 <a class="nav-link" aria-current="page" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item" >
-                <a class="nav-link"href="#">Testimonials</a>
+                <a class="nav-link"href="#testimonials">Testimonials</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Me</a>
+                <a class="nav-link" href="#contact">Contact Me</a>
               </li>
               <li class="nav-item">
                 <button class="btn-resume" ><a rel="noopener" href="https://drive.google.com/file/d/1v1tnME6kw-LQapo6Gu28lxSOUyL0pd4v/view?usp=sharing" target="_blank" >Resume</a></button>
@@ -57,7 +57,7 @@
       </div>
     </nav>
 
-    <header>
+    <section id="header">
         <div class="my-intro">
             <h4>Hi, I am</h4>
             <h2>Sampad Adhikary.</h2>
@@ -65,28 +65,29 @@
             <div id="bio">            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>  
         </div>
-    </header>
+    </section>
 
-    <weather>
+    <section id="weather">
       <div class="timeAndWeather">
         <h4>In my place it is</h4>
         <h4 id="currDate"><%= currentDate %></h4>
         <h2><%= currTime %></h2>
         <h4 id="currDate"><%= currTemp %> C, Jalandhar, India</h4>
       </div>
-    </weather>
+    </section>
 
-    <getInTouch>
+    <section id="getInTouch">
       <div class="get-in-touch">
         <button class="btn-get-in-touch" ><a rel="noopener" >get in touch</a></button>
       </div>
-    </getInTouch>
+    </section>
 
-    <about id="about">
+    <section id="about">
       <div class="about">
+        <h3 class="heading-big">About</h3>
       <div class="row about-row">
         <div class="col-6 about-content">
-          <h3 class="heading-big">About</h3>
+          
           <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
@@ -94,10 +95,9 @@
         </div>
       </div>
     </div>
+    </section>
 
-    </about>
-
-    <expertise>
+    <section id="expertise">
       <div class="expertise">
         <div class="row expertise-row">
           <h3 class="heading-big">My Expertise</h3>
@@ -115,11 +115,20 @@
             <img class="expert-img" src="css/Resources/icons/graphic.png" alt="dsa">
             <p class="heading-small">Graphic Designing</p>
             <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-          
           </div>
         </div>
       </div>
-    </expertise>
+    </section>
+
+    <section id="github-stats">
+      <h3 class="heading-big">Github Stats</h3>
+      <div class="stats">
+        <a href="https://github.com/Sampad-Adhikary" target="_blank">
+          <!-- <img id="placeholder3" src="public/empty.svg" class="gh-chart" /> -->
+          <img class="gh-chart" src="https://ghchart.rshah.org/A8755B/Sampad-Adhikary.svg"/>
+        </a>
+      </div>
+    </section>
 
     <section id="projects">
       <div class="projects">
@@ -244,6 +253,47 @@
       </div>
     </section>
 
+    <section id="contact">
+      <h3 class="heading-big">Contact Me</h3>
+      <div class="row contact-row">
+        <div class="col-md-6 col-sm-12 email">
+          <div class="email-btn" >mail me</div>
+        </div>
+        <div class="col-md-6 col-sm-12 email">
+          
+          <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="cta">
+        <h3 class="heading-big">Want to work together ?</h3>
+        <form class="row g-3">
+          <div class="col-md-6 form-cta">
+            <input type="text" class="form-control" id="inputName" placeholder="Full Name">
+            
+          </div>
+          <div class="col-md-6 form-cta">
+            <input type="number" class="form-control" id="inputMobile" placeholder="+91 0123456789">
+          </div>
+          <div class="col-md-6 form-cta">
+            <input type="text" class="form-control" id="inputSubject" placeholder="Enter your subject">
+          </div>
+          <div class="col-md-6 form-cta">
+            <input type="email" class="form-control" id="inputEmail4" placeholder="abc123@gmail.com">
+          </div>
+          <div class="col-12">
+            <input type="text" class="form-control input-message" id="inputMessage"  placeholder="Hello Sam, I have a message for you...">
+          </div>
+          <div class="col-12" style="text-align: center;">
+            <button type="submit" class="btn-submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+
     <section id="footer">
       <div class="footer-cls">
         <img class="footer-icon" src="css/Resources/icons/linkedin.png" alt="linkedin">
@@ -254,7 +304,6 @@
         <h5>Designed & Developed by Sampad Adhikary ©️ 2023</h5>
       </div>
     </section>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
@@ -262,3 +311,4 @@
     ></script>
   </body>
 </html>
+

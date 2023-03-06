@@ -23,6 +23,6 @@ app.get("/",(req,res)=>{
     });
 });
 
-app.listen(8080,(req,res)=>{
-    console.log("server started at port: 8080");
+app.listen(3000,(req,res)=>{
+    console.log("server started at port: 3000");
 }) 

@@ -1,12 +1,31 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     padding-left: 5vw;
     padding-right: 5vw;
+    /* margin-top: 5vw; */
     background-color: #110A08;
     font-family: 'Roboto', sans-serif;
     color: #A8755B;
 }
 
 /* NAVABAR */
+
+/* .navbar {
+    position: fixed;
+    width: 90%;
+    background-color: #110A08;
+    z-index: 1;
+  } */
+
+/* .navbar{
+    background-color: #110A08;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-bottom: 5vw;
+} */
 
 .navbar-brand{
     width: 50px;
@@ -63,6 +82,7 @@ a:hover{
 
 .my-intro{
     max-width:max-content;
+    /* margin-top: 5vw; */
     padding-top: 5%;
 }
 
@@ -137,12 +157,18 @@ h2{
     transition: 0.5s;
 }
 
+/* ABOUT ME */
+
 .about{
     max-width:max-content;
     padding-top: 5%;
     padding-bottom: 5%;
     /* padding-left: 5vw;
     padding-right: 5vw; */
+}
+
+.about-row{
+    margin-top: 2%;
 }
 
 .heading-big{
@@ -157,9 +183,10 @@ h2{
     background-size: cover;
     width: 300px;
     height: 300px;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     margin-top:auto ;
     margin-bottom: auto;
+    margin-left: 2%;
     vertical-align: middle;
     text-align:left;
     display: flex;
@@ -178,7 +205,6 @@ h2{
     padding-top: 5%;
     padding-bottom: 5%;
     text-align: center;
-
 }
 
 .expertise-box{
@@ -217,6 +243,24 @@ h2{
     margin: 2px;
 }
 
+/*GITHUB - STATS*/
+
+#github-stats{
+    /* max-width:max-content; */
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.stats{
+    padding-top: 2%;
+    margin: 0 auto;
+}
+.gh-chart{
+    width: 80%;
+    src: url(https://ghchart.rshah.org/A8755B/Sampad-Adhikary.svg);
+}
+
 /* PROJECTS */
 
 #projects{
@@ -224,6 +268,10 @@ h2{
     padding-top: 5%;
     padding-bottom: 5%;
     text-align: center;
+}
+
+.project-row{
+    margin-top: 2%;
 }
 
 .project-card{
@@ -307,11 +355,99 @@ em{
     color: #E5E5CB;
 }
 
+/* CONTACT ME */
+
+#contact{
+    max-width:max-content;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: right;
+}
+
+.contact-row{
+    margin-top: 2%;
+}
+
+.email{
+   align-items: center;
+   vertical-align: middle;
+}
+
+.email-btn{
+    margin: 0 auto 0 auto;
+    /* margin: auto; */
+    width: 15rem;
+    height: 4rem;
+    border-radius: 5px;
+    border-color: #A8755B;
+    border-width: 2px;
+    border-style: solid;
+    color: #A8755B;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.email-btn:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    border-color: #E5E5CB;
+    color: #E5E5CB;
+}
+
+/* CTA FORM */
+
+.row{
+    margin-top:2% ;
+}
+
+#cta{
+    max-width:100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    align-items: center;
+}
+
+.form-control{
+    background-color: #A8755B;
+    color: #E5E5CB;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.form-control:focus{
+    background-color: #3C2A21;
+    color: #E5E5CB;
+    box-shadow: none;
+}
+
+.btn-submit{
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: inset;
+    background-color: #3C2A21;
+    color: #E5E5CB;
+    border: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.btn-submit:hover{
+    /* width: 100%; */
+    transform: scale(1.0);
+    transition: 0.5s;
+    background-color: #E5E5CB;
+    color: #3C2A21;
+}
 
 /*FOOTER CLASS*/
 
 .footer-cls{
-    margin-top: 2%;
     padding-top: 5%;
     padding-bottom: 2%;
     text-align: center;
@@ -326,6 +462,22 @@ em{
 }
 
 /* RESPONSIVE */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 5px;
+}
+ 
+::-webkit-scrollbar-thumb {
+
+    border-radius: 5px;
+    background-color: #AA8877;
+    -webkit-box-align: center;
+}
 
 @media screen and (min-width: 300px) and (max-width: 900px) {
     .navbar {
@@ -367,5 +519,17 @@ em{
         display: flex;
         justify-content: center;
         text-align: center;
+    }
+    .contact-row{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    #contact, #about,#cta,#expertise{
+        text-align: center;
+    }
+    .email{
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
 }
