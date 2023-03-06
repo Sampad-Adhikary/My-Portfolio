@@ -13,19 +13,12 @@ body{
 
 /* NAVABAR */
 
-/* .navbar {
+.navbar {
     position: fixed;
     width: 90%;
-    background-color: #110A08;
+    background-color: rgba(17, 10, 8, 0.9);
     z-index: 1;
-  } */
-
-/* .navbar{
-    background-color: #110A08;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    margin-bottom: 5vw;
-} */
+  }
 
 .navbar-brand{
     width: 50px;
@@ -83,7 +76,7 @@ a:hover{
 .my-intro{
     max-width:max-content;
     /* margin-top: 5vw; */
-    padding-top: 5%;
+    padding-top: 9vw;
 }
 
 h4{
@@ -487,6 +480,7 @@ em{
     }
     .my-intro{
         /* text-align: center; */
+        padding-top: 20vw;
         padding-right: 5vw;
         padding-left: 5vw;
     }
