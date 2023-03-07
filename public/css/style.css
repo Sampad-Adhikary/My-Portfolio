@@ -5,7 +5,6 @@ html{
 body{
     padding-left: 5vw;
     padding-right: 5vw;
-    /* margin-top: 5vw; */
     background-color: #110A08;
     font-family: 'Roboto', sans-serif;
     color: #A8755B;
@@ -84,7 +83,7 @@ h4{
     font-family: 'Space Mono', monospace;
 }
 
-h1{
+.h1{
     color: #A8755B;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
@@ -440,6 +439,11 @@ em{
 
 /*FOOTER CLASS*/
 
+.footer-icon:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 .footer-cls{
     padding-top: 5%;
     padding-bottom: 2%;
@@ -472,8 +476,57 @@ em{
     -webkit-box-align: center;
 }
 
+/* LOADING SCREEN */
+
+#preloader{
+    background: #110A08 url(Resources/icons/loader.gif) no-repeat center;
+    margin-right: 5vw;
+    height: 100vh;
+    width: 90vw;
+    position: fixed;
+    z-index: 100;
+}
+
+/* TEXT ANIMATION */
+
+.my-intro .h1
+{   
+    width: max-content;
+    position: relative;
+    margin-top: 20px ;
+    letter-spacing: 5px;
+    color: #110A08;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.3vw #110A08;
+}
+
+.h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #A8755B;
+    -webkit-text-stroke: 0vw #A8755B;
+    border-right: 2px solid #A8755B;
+    overflow: hidden;
+    animation: animate-text 6s linear infinite;
+
+}
+
+@keyframes animate-text{
+    0%, 10%, 100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+
+
 @media screen and (min-width: 300px) and (max-width: 900px) {
-    .navbar {
+    .navbar{
         
         padding-right: 5vw; /* Corresponds to 10% of the viewport width */
         padding-left: 5vw; /* Corresponds to 10% of the viewport width */

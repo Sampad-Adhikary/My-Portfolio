@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sampad Adhikary</title>
+    <title>Sampad's Portfolio</title>
     <link rel="shortcut icon" href="css/Resources/icons/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,9 @@
     />
     <link href="css/style.css" rel="stylesheet" >
   </head>
-  <body data-simplebar>
+  <body>
+
+    <div id="preloader"></div>
 
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
@@ -49,7 +51,7 @@
                 <a class="nav-link" href="#contact">Contact Me</a>
               </li>
               <li class="nav-item">
-                <button class="btn-resume" ><a rel="noopener" href="https://drive.google.com/file/d/1v1tnME6kw-LQapo6Gu28lxSOUyL0pd4v/view?usp=sharing" target="_blank" >Resume</a></button>
+                <a rel="noopener" href="https://drive.google.com/file/d/1QT9QWryRGIGRRHRYoWSZxSFOad5-ChzE/view?usp=sharing" target="_blank"><button class="btn-resume" >Resume</button></a>
               </li>
             </ul>
           </div>
@@ -61,7 +63,7 @@
         <div class="my-intro">
             <h4>Hi, I am</h4>
             <h2>Sampad Adhikary.</h2>
-            <h1>I Design and Develop.</h1>
+            <p class="h1" data-text="I&nbsp;Design&nbsp;and&nbsp;Develop.">I Design and Develop.</p>
             <div id="bio">            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>  
         </div>
@@ -72,13 +74,14 @@
         <h4>In my place it is</h4>
         <h4 id="currDate"><%= currentDate %></h4>
         <h2><%= currTime %></h2>
-        <h4 id="currDate"><%= currTemp %> C, Jalandhar, India</h4>
+        <h4 id="currDate"><%= currTemp %> &deg C, Jalandhar, India</h4>
       </div>
     </section>
 
     <section id="getInTouch">
       <div class="get-in-touch">
-        <button class="btn-get-in-touch" ><a rel="noopener" >get in touch</a></button>
+        <a rel="noopener" href="#contact" ><button class="btn-get-in-touch">get in touch</button></a>
+        <!-- <a rel="noopener" href="#contact" >get in touch</a> -->
       </div>
     </section>
 
@@ -125,7 +128,7 @@
       <div class="stats">
         <a href="https://github.com/Sampad-Adhikary" target="_blank">
           <!-- <img id="placeholder3" src="public/empty.svg" class="gh-chart" /> -->
-          <img class="gh-chart" src="https://ghchart.rshah.org/A8755B/Sampad-Adhikary.svg"/>
+          <img class="gh-chart" src="https://ghchart.rshah.org/A8755B/Sampad-Adhikary" alt="My Github Contribution"/>
         </a>
       </div>
     </section>
@@ -257,7 +260,7 @@
       <h3 class="heading-big">Contact Me</h3>
       <div class="row contact-row">
         <div class="col-md-6 col-sm-12 email">
-          <div class="email-btn" >mail me</div>
+          <a href="mailto:sampadadhikary031@gmail.com"><div class="email-btn" >mail me</div></a>
         </div>
         <div class="col-md-6 col-sm-12 email">
           
@@ -269,25 +272,26 @@
 
     <section id="cta">
         <h3 class="heading-big">Want to work together ?</h3>
-        <form class="row g-3">
+        <form action="https://formsubmit.co/sampadadhikary031@gmail.com" method="POST" class="row g-3">
           <div class="col-md-6 form-cta">
-            <input type="text" class="form-control" id="inputName" placeholder="Full Name">
+            <input type="text" class="form-control" id="inputName" name="firstname" placeholder="Sampad">
             
           </div>
           <div class="col-md-6 form-cta">
-            <input type="number" class="form-control" id="inputMobile" placeholder="+91 0123456789">
+            <input type="text" class="form-control" id="inputMobile" name="lastname" placeholder="Adhikary">
           </div>
           <div class="col-md-6 form-cta">
-            <input type="text" class="form-control" id="inputSubject" placeholder="Enter your subject">
+            <input type="text" class="form-control" id="inputSubject" name="subject" placeholder="Enter your subject">
           </div>
           <div class="col-md-6 form-cta">
-            <input type="email" class="form-control" id="inputEmail4" placeholder="abc123@gmail.com">
+            <input type="email" class="form-control" id="inputEmail" name="email" placeholder="abc123@gmail.com">
           </div>
           <div class="col-12">
-            <input type="text" class="form-control input-message" id="inputMessage"  placeholder="Hello Sam, I have a message for you...">
+            <input type="text" class="form-control input-message" name="message" id="inputMessage"  placeholder="Hello Sam, I have a message for you...">
           </div>
           <div class="col-12" style="text-align: center;">
             <button type="submit" class="btn-submit">Submit</button>
+            <!-- <button type="submit">submit</button> -->
           </div>
         </form>
       </div>
@@ -296,12 +300,14 @@
 
     <section id="footer">
       <div class="footer-cls">
-        <img class="footer-icon" src="css/Resources/icons/linkedin.png" alt="linkedin">
-        <img class="footer-icon" src="css/Resources/icons/github.png" alt="github">
-        <img class="footer-icon" src="css/Resources/icons/leetcode.png" alt="Leetcode">
-        <img class="footer-icon" src="css/Resources/icons/facebook.png" alt="facebook">
-        <img class="footer-icon" src="css/Resources/icons/link.png" alt="linktree">
-        <h5>Designed & Developed by Sampad Adhikary ©️ 2023</h5>
+        <a href="https://www.linkedin.com/in/sampad-adhikary-b09051196/" target="_blank"><img class="footer-icon" src="css/Resources/icons/linkedin.png" alt="linkedin"></a>
+        <a href="https://github.com/Sampad-Adhikary" target="_blank"><img class="footer-icon" src="css/Resources/icons/github.png" alt="github"></a>
+        <a href="https://leetcode.com/sampadadhikary031/" target="_blank"><img class="footer-icon" src="css/Resources/icons/leetcode.png" alt="Leetcode"></a>
+        <a href="https://www.facebook.com/Sam.adhikary31" target="_blank"><img class="footer-icon" src="css/Resources/icons/facebook.png" alt="facebook"></a>
+        <a href="https://linktr.ee/sampadadhikary" target="_blank"><img class="footer-icon" src="css/Resources/icons/link.png" alt="linktree"></a>
+        <a href="https://www.figma.com/@sampadadhikary" target="_blank"><img class="footer-icon" src="css/Resources/icons/figma.png" alt="figma"></a>
+        <a href="https://www.instagram.com/_lonewarrior___/" target="_blank"><img class="footer-icon" src="css/Resources/icons/instagram.png" alt="instagram"></a>
+        <h5>Designed & Developed by Sampad Adhikary <img src="/css/Resources/icons/my logo.png" alt="logo" style="width: 50px; margin-bottom: 1px;"> © 2023</h5>
       </div>
     </section>
     <script
@@ -309,6 +315,12 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load",setTimeout(function(){
+        loader.style.display = "none";
+      },2000))
+    </script>
+
   </body>
 </html>
-

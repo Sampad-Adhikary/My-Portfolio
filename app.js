@@ -15,7 +15,6 @@ app.get("/",(req,res)=>{
         const weatherData = JSON.parse(data)
         const temp = weatherData.main.temp;
         const icon = weatherData.weather[0].icon;
-        const icurl = "http://openweathermap.org/img/wn/"+icon+"@2x.png"
         var day = date.currDate();
         var time = currTime();
         res.render('index.ejs',{currentDate: day,currTime:time,currTemp:temp});
