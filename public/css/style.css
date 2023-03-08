@@ -8,6 +8,7 @@ body{
     background-color: #110A08;
     font-family: 'Roboto', sans-serif;
     color: #A8755B;
+    /* color: #FFC3A1; */
 }
 
 /* NAVABAR */
@@ -76,6 +77,10 @@ a:hover{
     max-width:max-content;
     /* margin-top: 5vw; */
     padding-top: 9vw;
+}
+
+#intro-p{
+    font-size: 1.25rem;
 }
 
 h4{
@@ -164,7 +169,7 @@ h2{
 }
 
 .heading-big{
-    color: #A8755B;
+    color: #FFC3A1;
     font-family: 'Ubuntu', sans-serif;
     font-size: 3rem;
     font-weight: 600;
@@ -197,6 +202,10 @@ h2{
     padding-top: 5%;
     padding-bottom: 5%;
     text-align: center;
+}
+
+.expertise .content{
+    text-align: justify;
 }
 
 .expertise-box{
@@ -330,9 +339,10 @@ h2{
     margin: 0 auto;
 }
 
+
+
 .cs-slide{
     width: 100%;
-    height: 100%;
     background-color: #3C2A21;
     border-radius: 5px;
     padding-top: 2%;
@@ -340,15 +350,18 @@ h2{
     margin-top: 2%;
 }
 
+
 .carousel-content{
     width: 70%;
     margin: 0 auto;
+    margin-bottom: 1rem;
     color: #E5E5CB;
 }
 
 em{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-weight: 100;
     color: #E5E5CB;
 }
 
