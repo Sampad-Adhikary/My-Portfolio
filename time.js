@@ -14,6 +14,10 @@ exports.currTime = function(){
     var today = new Date();
     var hours = today.getHours()+5;
     var minutes = today.getMinutes()+30;
+    if(minutes>=60){
+      minutes = minutes-60;
+      hours = hours+1;
+    }
     var ampm = hours >= 12 ? ' PM' : ' AM';
     hours = hours % 12;
     hours = hours ? hours : 12;
