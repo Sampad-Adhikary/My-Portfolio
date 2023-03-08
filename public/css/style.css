@@ -192,7 +192,7 @@ h2{
 .about-img:hover{
     transform: scale(1.1);
     transition: 0.5s;
-    background-image: url(/css/Resources/pictures/sam.png);
+    background-image: url(/css/Resources/pictures/sampad.png);
 }
 
 /* MY EXPERTISE */
