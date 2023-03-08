@@ -12,8 +12,8 @@ exports.currDate = function () {
 
 exports.currTime = function(){
     var today = new Date();
-    var hours = today.getHours();
-    var minutes = today.getMinutes();
+    var hours = today.getHours()+5;
+    var minutes = today.getMinutes()+30;
     var ampm = hours >= 12 ? ' PM' : ' AM';
     hours = hours % 12;
     hours = hours ? hours : 12;
