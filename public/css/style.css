@@ -194,10 +194,11 @@ h2{
     display: flex;
     align-items: center;
 }
+
 .about-img:hover{
     transform: scale(1.1);
     transition: 0.5s;
-    background-image: url(/css/Resources/pictures/samm.jpg);
+    background-image: url(/css/Resources/pictures/samh.jpg);
 }
 
 /* MY EXPERTISE */
