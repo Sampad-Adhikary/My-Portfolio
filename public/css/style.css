@@ -308,10 +308,106 @@ h2{
     margin-bottom: 15px;
 }
 
+
+#p1{
+    background-image: url(/css/Resources/pictures/eth.png);
+    margin: 2px auto;
+    height: 166px;
+    width: 340px;
+}
+
+#p1:hover{
+    transition: 0.5s;
+    background-image: url(/css/Resources/pictures/ethh.png);
+}
+
+#p2{
+    background-image: url(/css/Resources/pictures/dsa.png);
+    margin: 2px auto;
+    height: 166px;
+    width: 340px;
+}
+
+
+
+#p2:hover{
+    transition: 0.5s;
+    background-image: url(/css/Resources/pictures/dsah.png);
+}
+
+#p3{
+    background-image: url(/css/Resources/pictures/hab.png);
+    margin: 2px auto;
+    height: 222px;
+    width: 340px;
+}
+
+#p3:hover{
+    transition: 0.5s;
+    background-image: url(/css/Resources/pictures/habh.png);
+}
+
+#p4{
+    background-image: url(/css/Resources/pictures/dicey.png);
+    margin: 2px auto;
+    height: 217px;
+    width: 340px;
+}
+
+#p4:hover{
+    transition: 0.5s;
+    background-image: url(/css/Resources/pictures/dicyh.png);
+}
+#p5{
+    background-image: url(/css/Resources/pictures/simon.png);
+    margin: 2px auto;
+    height: 248px;
+    width: 340px;
+}
+
+#p5:hover{
+    transition: 0.5s;
+    background-image: url(/css/Resources/pictures/simonh.png);
+}
+#p6{
+    background-image: url(/css/Resources/pictures/jam.png);
+    margin: 2px auto;
+    height: 248px;
+    width: 340px;
+}
+
+#p6:hover{
+    transition: 0.5s;
+    background-image: url(/css/Resources/pictures/jamh.png);
+}
+#p7{
+    background-image: url(/css/Resources/pictures/finpet.png);
+    margin: 2px auto;
+    height: 222px;
+    width: 340px;
+}
+
+#p7:hover{
+    transition: 0.5s;
+    background-image: url(/css/Resources/pictures/finpeth.png);
+}
+#p8{
+    background-image: url(/css/Resources/pictures/gd.png);
+    margin: 2px auto;
+    height: 217px;
+    width: 340px;
+}
+
+#p8:hover{
+    transition: 0.5s;
+    background-image: url(/css/Resources/pictures/gdh.png);
+}
+
 .crd-head{
     font-family: 'Ubuntu', sans-serif;
     font-size: 2rem;
     color: #E5E5CB;
+    margin-top: 10px;
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 0px; ;
