@@ -24,7 +24,7 @@ app.get("/",(req,res)=>{
 });
 
 app.get("/resume",(req,res)=>{
-    res.download('resume.pdf');
+    res.download('https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/Sampad+Resume.pdf');
 })
 
 app.listen(3000,(req,res)=>{
