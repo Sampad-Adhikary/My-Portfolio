@@ -179,7 +179,7 @@ h2{
 }
 
 .about-img{
-    background-image: url(https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/sam.png);
+    background-image: url(https://sampad-portfolio.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/sam.png);
     background-size: cover;
     width: 400px;
     height: 300px;
@@ -195,7 +195,7 @@ h2{
 .about-img:hover{
     transform: scale(1.1);
     transition: 0.5s;
-    background-image: url(https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/samh.jpg);
+    background-image: url(https://sampad-portfolio.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/samh.jpg);
 }
 
 /* MY EXPERTISE */
@@ -308,7 +308,7 @@ h2{
 
 
 #p1{
-    background-image: url(https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/eth.png);
+    background-image: url(https://sampad-portfolio.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/eth.png);
     margin: 2px auto;
     height: 166px;
     width: 340px;
@@ -316,11 +316,11 @@ h2{
 
 #p1:hover{
     transition: 0.5s;
-    background-image: url(https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/ethh.png);
+    background-image: url(https://sampad-portfolio.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/ethh.png);
 }
 
 #p2{
-    background-image: url(https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/dsa.png);
+    background-image: url(https://sampad-portfolio.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/dsa.png);
     margin: 2px auto;
     height: 166px;
     width: 340px;
@@ -330,11 +330,11 @@ h2{
 
 #p2:hover{
     transition: 0.5s;
-    background-image: url(https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/dsah.png);
+    background-image: url(https://sampad-portfolio.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/dsah.png);
 }
 
 #p3{
-    background-image: url(https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/hab.png);
+    background-image: url(https://sampad-portfolio.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/hab.png);
     margin: 2px auto;
     height: 222px;
     width: 340px;
@@ -342,11 +342,11 @@ h2{
 
 #p3:hover{
     transition: 0.5s;
-    background-image: url(https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/habh.png);
+    background-image: url(https://sampad-portfolio.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/habh.png);
 }
 
 #p4{
-    background-image: url(https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/dicey.png);
+    background-image: url(https://sampad-portfolio.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/dicey.png);
     margin: 2px auto;
     height: 217px;
     width: 340px;
@@ -354,10 +354,10 @@ h2{
 
 #p4:hover{
     transition: 0.5s;
-    background-image: url(https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/dicyh.png);
+    background-image: url(https://sampad-portfolio.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/dicyh.png);
 }
 #p5{
-    background-image: url(https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/simon.png);
+    background-image: url(https://sampad-portfolio.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/simon.png);
     margin: 2px auto;
     height: 248px;
     width: 340px;
@@ -365,10 +365,10 @@ h2{
 
 #p5:hover{
     transition: 0.5s;
-    background-image: url(https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/simonh.png);
+    background-image: url(https://sampad-portfolio.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/simonh.png);
 }
 #p6{
-    background-image: url(https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/jam.png);
+    background-image: url(https://sampad-portfolio.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/jam.png);
     margin: 2px auto;
     height: 248px;
     width: 340px;
@@ -376,10 +376,10 @@ h2{
 
 #p6:hover{
     transition: 0.5s;
-    background-image: url(https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/jamh.png);
+    background-image: url(https://sampad-portfolio.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/jamh.png);
 }
 #p7{
-    background-image: url(https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/finpet.png);
+    background-image: url(https://sampad-portfolio.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/finpet.png);
     margin: 2px auto;
     height: 222px;
     width: 340px;
@@ -387,10 +387,10 @@ h2{
 
 #p7:hover{
     transition: 0.5s;
-    background-image: url(https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/finpeth.png);
+    background-image: url(https://sampad-portfolio.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/finpeth.png);
 }
 #p8{
-    background-image: url(https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/gd.png);
+    background-image: url(https://sampad-portfolio.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/gd.png);
     margin: 2px auto;
     height: 217px;
     width: 340px;
@@ -398,11 +398,11 @@ h2{
 
 #p8:hover{
     transition: 0.5s;
-    background-image: url(https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/gdh.png);
+    background-image: url(https://sampad-portfolio.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/gdh.png);
 }
 
 #p9{
-    background-image: url(https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/contact.png);
+    background-image: url(https://sampad-portfolio.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/contact.png);
     margin: 2px auto;
     height: 162px;
     width: 337px;
@@ -410,7 +410,7 @@ h2{
 
 #p9:hover{
     transition: 0.5s;
-    background-image: url(https://web3toolsimage.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/contacth.png);
+    background-image: url(https://sampad-portfolio.s3.eu-north-1.amazonaws.com/Sampad-Portfolio-Files/images/contacth.png);
 }
 
 .crd-head{
