@@ -3,6 +3,13 @@ const https = require("https"); //native node module
 const bodyParser = require("body-parser");
 const { currTime } = require("./time");
 const date = require(__dirname+"/time.js");
+// var admin = require("firebase-admin");
+
+// var serviceAccount = require("secure\serviceAccountKey.json");
+
+// admin.initializeApp({
+//   credential: admin.credential.cert(serviceAccount)
+// });
 
 
 const app = express();
@@ -21,6 +28,15 @@ app.get("/",(req,res)=>{
         res.render('index.ejs',{currentDate: day,currTime:time,currTemp:temp});
         });
     });
+});
+
+app.post("/formsubmit",(req,res)=>{
+    firstname = req.body.get('firstname')
+    lastname = req.body.get('lastname')
+    subject = req.body.get('subject')
+    email = req.body.get('email')
+    message = req.body.get('message')
+    res.redirect("/")
 });
 
 app.listen(3000,(req,res)=>{
